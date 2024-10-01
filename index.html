@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victomort's Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Imported font from google -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script defer src="script.js"></script>
+</head>
+
+<body class=".bebas-neue-regular">
+    <!-- Opening container -->
+    <div class="title container-styles">
+        <h1 class="fas fa-pizza-slice">Victomort's Pizza</h1>
+    </div>
+    <!-- about us section -->
+    <div class="about-us-container container-styles">
+        <p>Welcome to Victomort's Pizza! We are passionate about the food we create,
+            and we work hard to maintain quality that our community can stand behind.
+            We look forward to serving you!
+        </p>
+        <img id="about-us-image" class="container-styles" src="images/commons.jpg" alt="Image of our shop" />
+    </div>
+
+    <!-- This container has the menu and checkout -->
+    <div class="menu-checkout-container container-styles">
+        <!-- Menu -->
+        <div class="menu-only-container">
+            <h2>Our Menu</h2>
+            <!-- Pizza number 1 -->
+            <div class="pizza-item container-styles">
+                <h3>Classic Cheese -- $8.00</h3>
+                <div class="pizza-info">
+                    <div class="image-bio">
+                        <img class="pizza-photos container-styles" src="images/cheesePizza.jpg" alt="Pizza 1">
+                        <p>With a hearty blend of locally sourced cheeses, this classic never fails to satisfy hunger
+                        </p>
+                    </div>
+                    <div class="options">
+                        <!-- for attribute makes an association between the label and the <select> element -->
+                        <label for="size-select-1">Size:</label>
+                        <select id="size-select-1" class="size-select">
+                            <option value="0">--Select Size--</option>
+                            <option value="1" data-price="0">Small</option>
+                            <option value="2" data-price="2">Medium: +$2.00</option>
+                            <option value="3" data-price="3">Large: +$3.00</option>
+                        </select>
+                        <label for="crust-select-1">Crust:</label>
+                        <select id="crust-select-1" class="crust-select">
+                            <option value="0">--Select Crust--</option>
+                            <option value="1" data-price="1">Thin: +$1.00</option>
+                            <option value="2" data-price="0">Regular</option>
+                            <option value="3" data-price="1">Thick: +$1.00</option>
+                        </select>
+                    </div>
+                    <button id="add-to-cart-btn-1" class="add-to-cart" style="display: none;">Add to Cart:</button>
+                </div>
+            </div>
+            <!-- Pizza Number 2 -->
+            <div class="pizza-item container-styles">
+                <h3>New York Pepperoni -- $9.00</h3>
+                <div class="pizza-info">
+                    <div class="image-bio">
+                        <img class="pizza-photos container-styles" src="images/pepperoniPizza.jpg" alt="Pizza 2">
+                        <p>The best cheese pizza around, will make your mouth water</p>
+                    </div>
+                    <div class="options">
+                        <label for="size-select-2">Size:</label>
+                        <select id="size-select-2" class="size-select">
+                            <option value="0">--Select Size--</option>
+                            <option value="1" data-price="0">Small</option>
+                            <option value="2" data-price="2">Medium: +$2.00</option>
+                            <option value="3" data-price="3">Large: +$3.00</option>
+                        </select>
+                        <label for="crust-select-2">Crust:</label>
+                        <select id="crust-select-2" class="crust-select">
+                            <option value="0">--Select Crust--</option>
+                            <option value="1" data-price="1">Thin: +$1.00</option>
+                            <option value="2" data-price="0">Regular</option>
+                            <option value="3" data-price="1">Thick: +$1.00</option>
+                        </select>
+                    </div>
+                    <button id="add-to-cart-btn-2" class="add-to-cart" style="display: none;"></button>
+                </div>
+            </div>
+            <!-- Pizza Number 3 -->
+            <div class="pizza-item container-styles">
+                <h3>Tangy Barbecue -- $10.00</h3>
+                <div class="pizza-info">
+                    <div class="image-bio">
+                        <img class="pizza-photos container-styles" src="images/barbecuePizza.jpg" alt="Pizza 3">
+                        <p>Crafed with a mix of chicken, peppers, onions, and BBQ sauce to caputure the flavors or
+                            perfection</p>
+                    </div>
+                    <div class="options">
+                        <label for="size-select-3">Size:</label>
+                        <select id="size-select-3" class="size-select">
+                            <option value="0">--Select Size--</option>
+                            <option value="1" data-price="0">Small</option>
+                            <option value="2" data-price="2">Medium: +$2.00</option>
+                            <option value="3" data-price="3">Large: +$3.00</option>
+                        </select>
+                        <label for="crust-select-3">Crust:</label>
+                        <select id="crust-select-3" class="crust-select">
+                            <option value="0">--Select Crust--</option>
+                            <option value="1" data-price="1">Thin: +$1.00</option>
+                            <option value="2" data-price="0">Regular</option>
+                            <option value="3" data-price="1">Thick: +$1.00</option>
+                        </select>
+                    </div>
+                    <button id="add-to-cart-btn-3" class="add-to-cart" style="display: none;"></button>
+                </div>
+            </div>
+            <!-- Pizza Number 4 -->
+            <div class="pizza-item container-styles">
+                <h3>The Hawaiian -- $9.00</h3>
+                <div class="pizza-info">
+                    <div class="image-bio">
+                        <img class="pizza-photos container-styles" src="images/hawaiianPizza.jpg" alt="Pizza 3">
+                        <p>Sweet or Savory? Why not have both! With salty ham and sweetpapple, one cannot go wrong
+                        </p>
+                    </div>
+                    <div class="options">
+                        <label for="size-select-4">Size:</label>
+                        <select id="size-select-4" class="size-select">
+                            <option value="0">--Select Size--</option>
+                            <option value="1" data-price="0">Small</option>
+                            <option value="2" data-price="2">Medium: +$2.00</option>
+                            <option value="3" data-price="3">Large: +$3.00</option>
+                        </select>
+                        <label for="crust-select-4">Crust:</label>
+                        <select id="crust-select-4" class="crust-select">
+                            <option value="0">--Select Crust--</option>
+                            <option value="1" data-price="1">Thin: +$1.00</option>
+                            <option value="2" data-price="0">Regular</option>
+                            <option value="3" data-price="1">Thick: +$1.00</option>
+                        </select>
+                    </div>
+                    <button id="add-to-cart-btn-4" class="add-to-cart" style="display: none;"></button>
+                </div>
+            </div>
+        </div>
+        <!-- Cart is initially empty, let JS make the items as they are added/removed from cart -->
+        <div class="checkout-only-container container-styles">
+            <h3>Your Cart:</h3>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
