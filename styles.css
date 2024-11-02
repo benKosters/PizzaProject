@@ -27,6 +27,7 @@ body {
     /*Allow text and image to wrap*/
     background-color: beige;
     align-items: center;
+    text-align: center;
     margin: 40px;
     height: auto;
     font-size: 1.75rem;
